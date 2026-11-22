@@ -1,0 +1,7 @@
+# Regras padrão do gitleaks + exceções revisadas deste repositório.
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Manifesto do instalador do BMad: hashes SHA-256 de conteúdo, não segredos"
+paths = ['''bmad/dist/_bmad/_config/files-manifest\.csv''']

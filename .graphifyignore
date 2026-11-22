@@ -1,0 +1,13 @@
+bmad/dist/
+node_modules/
+web/dist/
+web/.angular/
+internal/webui/dist/
+data/
+graphify-out/
+.terraform/
+openspec/changes/archive/
+*.lock
+package-lock.json
+pnpm-lock.yaml
+go.sum

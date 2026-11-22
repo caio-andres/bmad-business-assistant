@@ -1,1 +1,34 @@
+# Segredos
+.env
+.env.*
+!.env.example
 TECH_SPEC.md
+
+# Build e dependências
+/bin/
+/dist/
+node_modules/
+web/dist/
+web/.angular/
+internal/webui/dist/*
+!internal/webui/dist/.gitkeep
+coverage/
+*.test
+*.exe
+
+# Dados locais
+/data/
+*.db
+*.db-shm
+*.db-wal
+
+# Ferramentas
+graphify-out/
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+test-results/
+playwright-report/
+.DS_Store
+__pycache__/
