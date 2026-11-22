@@ -138,6 +138,9 @@ type Registry struct {
 // NewRegistry returns an empty registry.
 func NewRegistry() *Registry { return &Registry{tools: map[string]*Tool{}} }
 
+// Has reports whether a tool is registered.
+func (r *Registry) Has(name string) bool { _, ok := r.tools[name]; return ok }
+
 // Add registers a tool (replacing one with the same name).
 func (r *Registry) Add(t *Tool) {
 	if _, ok := r.tools[t.Def.Name]; !ok {
